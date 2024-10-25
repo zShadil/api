@@ -1,0 +1,22 @@
+<div class="row">
+  @for (item of products; track item.id) {
+    <div class="col-3" routerLink="/products/{{item.id}}">
+  <main>
+    <div class = "card">
+      <img
+      src={{item.image}}
+      alt="">
+      <div class="card-content">
+        <h2>
+          {{item.title}}
+        </h2>
+        <p>
+          {{item.description.slice(0,150)}}...
+        </p>
+
+      </div>
+    </div>
+  </main>
+</div>
+}
+</div>
